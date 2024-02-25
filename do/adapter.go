@@ -116,7 +116,12 @@ func (w *FuncResponseWriter) WriteHeader(statusCode int) {
 	w.StatusCode = statusCode
 }
 
+// Deprecated: use FuncResponse() instead. Will be removed in v2.0.
 func (w *FuncResponseWriter) GetFuncResponse() *FuncResponse {
+	return w.FuncResponse()
+}
+
+func (w *FuncResponseWriter) FuncResponse() *FuncResponse {
 	res := &FuncResponse{}
 	res.Headers = make(map[string]string)
 	res.StatusCode = w.StatusCode
