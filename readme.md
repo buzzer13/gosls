@@ -1,6 +1,6 @@
 # GoSLS
 
-[![latest release](https://gitlab.com/buzzer13/gosls/-/badges/release.svg)](https://gitlab.com/buzzer13/gosls/-/releases)
+[![latest release](https://img.shields.io/github/v/release/buzzer13/gosls)](https://github.com/buzzer13/gosls/releases)
 
 This project provides structure definitions and helper methods for writing serverless functions in the Go programming language.
 
@@ -15,7 +15,7 @@ This project provides structure definitions and helper methods for writing serve
 package main
 
 import (
-    "gitlab.com/buzzer13/gosls/do"
+    "github.com/buzzer13/gosls/do"
     "net/http"
 )
 
